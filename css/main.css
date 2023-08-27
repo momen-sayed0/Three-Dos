@@ -123,10 +123,9 @@ body {
 }
 
 .container .layout .about {
-     background-image: url(/img/background.jpg);
+     background-image: url(../img/background.jpg);
      background-size: cover;
      background-attachment: fixed;
-     height: 100vh;
 }
 
 .about .h2 {
