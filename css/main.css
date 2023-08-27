@@ -1,0 +1,430 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     color: white;
+}
+
+.header {
+     width: 100%;
+     background-image: linear-gradient(120deg, rgb(26, 26, 26)65%, rgb(119, 4, 165));
+     z-index: 9991;
+}
+
+.header .container {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+}
+
+.header .logo {
+     width: 20%;
+     padding: 10px 0px;
+     margin-left: -100px;
+}
+
+.header .logo img {
+     width: 60%;
+     padding: 10px 0px;
+}
+
+.header .nav {
+     width: 40%;
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+
+}
+
+.header .nav .menu {
+     width: 75%;
+     padding: 10px;
+     display: flex;
+     justify-content: space-evenly;
+
+}
+
+.header .nav .menu ul {
+     width: 70%;
+     font-family: sans-serif;
+     padding: 10px 0px;
+     list-style-type: none;
+     display: flex;
+     justify-content: space-around;
+     cursor: pointer;
+}
+
+.header .nav .menu ul :hover {
+     transform: scale(1.2, 1.2);
+     transition: all 0.5s;
+     font-weight: bold;
+}
+
+.header .nav .social-links {
+     width: 28%;
+     font-size: 18px;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+}
+
+.header .nav .social-links :hover {
+     transform: rotate(360deg) scale(2, 2);
+     transition: all 0.4s;
+     color: purple;
+}
+
+.container .layout {
+     width: 100%;
+     background-image: url(../img/bbbbbb.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+.container .layout .homePage {
+     background-color: rgba(0, 0, 0, 0.438);
+     height: 100vh;
+}
+
+.container .layout .homePage .title {
+     text-align: center;
+     position: relative;
+     top: 35%;
+}
+
+.container .layout .homePage .title .h1 {
+     font-size: 40px;
+     font-family: poppins;
+     color: white;
+     text-shadow: 15px 15px 15px purple;
+     padding-bottom: 15px;
+}
+
+.container .layout .homePage .title button {
+     font-size: 16px;
+     border: 2px solid white;
+     border-radius: 44px;
+     padding: 15px 50px;
+     background-color: transparent;
+}
+
+.container .layout .homePage .title button a {
+     color: white;
+     text-decoration: none;
+
+}
+
+.container .layout .homePage .title button:hover {
+     background-color: rgb(127, 3, 177);
+}
+
+.container .layout .about {
+     background-image: url(/img/background.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     height: 100vh;
+}
+
+.about .h2 {
+     width: 90%;
+     left: 10%;
+     top: 10%;
+     font-size: 14px;
+     font-family: poppins;
+     font-weight: normal;
+     position: relative;
+}
+
+.about .h2:after {
+     background-color: rgb(154, 225, 175);
+     position: absolute;
+     width: 6%;
+     left: 6%;
+     height: 1px;
+     content: "";
+     bottom: 14px;
+}
+
+.about .h3 {
+     width: 90%;
+     left: 10%;
+     top: 10%;
+     font-size: 24px;
+     font-family: poppins;
+     position: relative;
+
+}
+
+
+.row {
+     display: flex;
+     flex-wrap: wrap;
+     padding-top: 100px;
+     justify-content: space-around;
+}
+
+.row .img-info {
+     width: 40%;
+}
+
+.row .img-info img {
+     width: 80%;
+}
+
+.row .about-content {
+     width: 40%;
+     left: 5%;
+     font-size: 24px;
+     font-family: Raleway;
+     font-weight: 600;
+     position: relative;
+
+}
+
+.row .about-content .italicP {
+     font-style: italic;
+     font-size: 14px;
+
+}
+
+.row .about-content .icon {
+     display: flex;
+     padding: 10px;
+     font-size: 18px;
+}
+
+.row .about-content i {
+     padding-right: 5px;
+}
+
+.row .about-content button {
+     background-color: transparent;
+}
+
+.row .about-content button a {
+     color: white;
+     text-decoration: none;
+     background-color: rgb(158, 69, 200);
+     font-size: 14px;
+     border: 2px solid;
+     border-radius: 44px;
+     padding: 10px 25px;
+}
+
+footer {
+     background-color: rgb(26, 26, 26);
+}
+
+footer .endSite {
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+     padding-top: 50px;
+}
+
+.siteInfo h2 {
+     font-weight: bold;
+     font-family: raleway;
+     padding: 10px;
+     text-align: center;
+}
+
+.siteInfo h4 {
+     text-align: center;
+     padding: 10px;
+     font-family: raleway;
+     font-weight: 100;
+}
+
+.endSite .usefulLinks {
+     text-align: center;
+     padding: 10px;
+}
+
+.endSite .usefulLinks h2 {
+     font-weight: bold;
+     font-family: raleway;
+     font-size: 16px;
+}
+
+.endSite .usefulLinks .sociallinks i {
+     padding: 15px 15px;
+     color: white;
+     background-color: purple;
+     border-radius: 100%;
+}
+
+.endSite .usefulLinks .sociallinks i:hover {
+     background-color: purple;
+     border-radius: 100%;
+     transform: scale(1.2, 1.2);
+     transition: all 0.5s;
+}
+
+.ourSponsors {
+     width: 20%;
+     text-align: center;
+}
+
+.ourSponsors h2 {
+     font-weight: bold;
+     font-family: raleway;
+     font-size: 16px;
+     padding-bottom: 10px;
+}
+
+.ourSponsors .AMIT {
+     padding: 20px;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.ourSponsors .AMIT .amitlogo {
+     width: 25%;
+
+}
+
+.ourSponsors .AMIT .amitlogo img {
+     width: 80%;
+}
+
+.ourSponsors a {
+     padding-top: 5px;
+     color: white;
+     text-decoration: none;
+}
+
+.ourSponsors .EBDA3 {
+     padding: 20px;
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.ourSponsors .EBDA3 .ebda3logo {
+     width: 25%;
+
+}
+
+.ourSponsors .EBDA3 .ebda3logo img {
+     width: 80%;
+}
+
+.copyRight {
+     text-align: center;
+     font-weight: bold;
+     font-family: raleway;
+     font-size: 16px;
+     padding-bottom: 10px;
+}
+
+.copyRight h5 {
+     padding-bottom: 15px;
+}
+
+.copyRight a {
+     padding-top: 5px;
+     color: forestgreen;
+     text-decoration: none;
+}
+
+.container .toggler {
+     display: none;
+}
+
+
+@media (max-width: 750px) {
+     .menu ul li {
+          display: none;
+     }
+
+     .social-links i {
+          display: none;
+     }
+
+     .container .toggler {
+          display: block;
+          padding: 20px 50px;
+     }
+
+     .container .toggler i {
+          font-size: 20px;
+     }
+
+     .header .logo {
+          width: 50%;
+          margin-left: 10px;
+     }
+
+     .header .logo img {
+          width: 90%;
+          padding: 10px 0px;
+     }
+
+     .container .layout {
+          background-position: center center;
+     }
+
+     .container .layout .about {
+          height: auto;
+     }
+
+     .about .h2 {
+          width: 0%;
+          left: 10%;
+          top: 0%;
+          padding-top: 30px;
+     }
+
+     .row {
+          padding-top: 15px;
+     }
+
+     .row .about-content {
+          width: 85%;
+          left: 0%;
+          font-size: 20px;
+     }
+
+     .row .img-info {
+          padding-top: 40px;
+          width: 90%;
+     }
+
+     footer .endSite {
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+     }
+
+     .siteInfo {
+          width: 90%;
+          text-align: center;
+     }
+
+     .endSite .usefulLinks {
+          width: 90%;
+          text-align: center;
+          padding: 10px;
+     }
+
+     .endSite .usefulLinks h2 {
+          font-size: 18px;
+          padding: 10px;
+     }
+
+     .ourSponsors {
+          width: 90%;
+          padding: 40px;
+          text-align: center;
+     }
+
+     .copyRight {
+          width: 90%;
+          font-size: 18px;
+          padding-bottom: 30px;
+     }
+}
